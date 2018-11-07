@@ -24,21 +24,23 @@ body {
 	background: -webkit-linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border: 5px Solid Black;
+    border-radius: 25px;
     margin: 5px;
     position: relative;
     float: left;
     display: inline-block;
-    width: 200px;
+    width: 235px;
 }
 
 .card-title {
-	border: 2px Solid Grey;
+	border: 2px Solid green;
+	border-radius: 20px;
 	margin: 0;
-	padding: 0;
+	padding: 5px;
+	padding-top: 10px;
 	font: 25px Bold;
 	font-family: 'Poor Story', cursive;
-
-
+	height: 5em;
 }
 
 /*Pagination*/
@@ -79,4 +81,12 @@ body {
 
 .clear {
 	clear: both;
+}
+
+.card-subtitle {
+	font: 18px Bold;
+	font-family: 'Orbitron', sans-serif;
+	padding: 0px;
+	margin: 15px;
+
 }

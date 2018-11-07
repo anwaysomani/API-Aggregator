@@ -33,13 +33,15 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
 
 <body>
 	<div class="init-block">
 		Games Arena
 	</div>
+
+	<br><br><br>
 
 	<div id="easyPaginate" class="clear">
 		<%
@@ -70,7 +72,7 @@
 	<script type="text/javascript">
 		$('#easyPaginate').easyPaginate({
     		paginateElement: 'div.card',
-    		elementsPerPage: 24,
+    		elementsPerPage: 250,
     		effect: 'slide'
 		});
 	</script>
