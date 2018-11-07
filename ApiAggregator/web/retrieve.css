@@ -31,17 +31,20 @@ body {
     float: left;
     display: inline-block;
     width: 245px;
+    text-align: center;
+    height: 250px;
 }
 
 .card-title {
-	border: 2px Solid green;
+	border-bottom: 2px Solid #08D5A6;
 	border-radius: 20px;
 	margin: 0;
 	padding: 5px;
 	padding-top: 10px;
-	font: 25px Bold;
+	font: 25px Bold Italic;
 	font-family: 'Poor Story', cursive;
 	height: 5em;
+	text-align: left;
 }
 
 /*Pagination*/
@@ -89,3 +92,57 @@ body {
 	padding: 0px;
 	margin: 15px
 }
+
+.lefty-block {
+	position: relative;
+	float: left;
+	width: 40%;
+}
+
+.righty-block {
+	width: 50%;
+	float: right;
+	background-color: white;
+	/*color: red;*/
+	padding: 7px;
+}
+
+/*Editor's choice text on hover*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    width: 120px;
+    top: 100%;
+    left: 50%; 
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    cursor: none;
+}
+
+.leftyre {
+	float: right;
+	font: 20px Bold;
+	font-family: 'Luckiest Guy', cursive;
+	border-left: 5px Solid Black;
+	border-right: 5px Solid Black;
+	border-bottom: 5px Solid Black;
+	border-radius: 10px;
+	margin-right: 5px;
+}
+

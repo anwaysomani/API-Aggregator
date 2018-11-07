@@ -30,15 +30,24 @@
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="jquery.easyPaginate.js"></script>
 
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
 
 
 <body>
 	<div class="init-block">
 		Games Arena
+		<div class="leftyre">
+			By: Anway Somani
+		</div>
 	</div>
 
 	<br><br><br>
@@ -48,7 +57,7 @@
 			try{
 				connection = DriverManager.getConnection(connectionUrl+database, userid, password);
 				statement=connection.createStatement();
-				String sql = "SELECT * FROM api_list ORDER BY score DESC ,release_year ASC";
+				String sql = "SELECT * FROM api_list ORDER BY score DESC ,release_year ASC, editors_choice DESC";
 				resultSet = statement.executeQuery(sql);
 				while(resultSet.next()){
 		%>
@@ -56,9 +65,25 @@
   			<div class="card-body">
     			<h5 class="card-title"><a href="<%=resultSet.getString("url") %>"><%=resultSet.getString("title") %></a></h5>
     			<h6 class="card-subtitle mb-2 text-muted"><%=resultSet.getString("platform") %></h6>
-    			<p><%=resultSet.getString("score") %></p>
-    			<p><%=resultSet.getString("editors_choice") %></p>
-    		}
+    			<hr>
+    			<div class="double-block">
+    				<div class="lefty-block">
+		    			<%
+							if("Y".equals(resultSet.getString("editors_choice"))) {
+						%>
+							<div class="tooltip">
+								<i class="fa fa-beer" aria-hidden="true"></i>
+								<span class="tooltiptext">
+									Editor's choice!
+								</span>
+							</div>
+						<%
+						}
+						%>
+					</div>
+    				<div class="righty-block"><%=resultSet.getString("score") %></div>
+    			</div>
+    		
     			
   			</div>
 		</div>
