@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Nov, 2018, 9:21:23 PM
+    Author     : LENOVO
+*/
+
+html {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #00bf8f;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card {
+    background: #3A1C71;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 5px Solid Black;
+    margin: 5px;
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 200px;
+}
+
+.card-title {
+	border: 2px Solid Grey;
+	margin: 0;
+	padding: 0;
+	font: 25px Bold;
+	font-family: 'Poor Story', cursive;
+
+
+}
+
+/*Pagination*/
+#easyPaginate {
+	clear: both;
+}
+
+#easyPaginate {
+	display:block;
+	margin-bottom:10px;
+
+}
+
+.easyPaginateNav a {
+	padding:5px;
+}
+
+.easyPaginateNav a.current {
+	font-weight:bold;
+	text-decoration:underline;
+}
+/*End of pagination block*/
+
+
+.init-block {
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+	margin: 0;
+	padding-top: 10px;
+	text-align: center;
+
+	/*text*/	
+	font: 50px Bold;
+	font-family: 'Spicy Rice', cursive;
+
+}
+
+.clear {
+	clear: both;
+}
