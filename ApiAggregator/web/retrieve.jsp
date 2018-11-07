@@ -41,9 +41,6 @@
 		Games Arena
 	</div>
 
-
-
-	<h1>Retrieve data from database in jsp</h1>
 	<div id="easyPaginate" class="clear">
 		<%
 			try{
