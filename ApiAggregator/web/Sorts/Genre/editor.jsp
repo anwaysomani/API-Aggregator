@@ -24,7 +24,7 @@
 
 <head>
 	<title>Games Arena</title>
-	<link rel="stylesheet" type="text/css" href="retrieve.css">
+	<link rel="stylesheet" type="text/css" href="../../retrieve.css">
 
 	<!-- Pagination Effects -->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -41,25 +41,24 @@
 		Games Arena
 	</div>
 
-	<br><br><br>
+	<br>
+	<a href="../../retrieve.jsp"><-- Return to main</a>
+	<br><br>
 
 	<div id="easyPaginate" class="clear">
 		<%
 			try{
 				connection = DriverManager.getConnection(connectionUrl+database, userid, password);
 				statement=connection.createStatement();
-				String sql = "SELECT * FROM api_list ORDER BY score DESC ,release_year ASC";
+				String sql = "SELECT * FROM api_list WHERE genre LIKE '%Editor%' ORDER BY score DESC";
 				resultSet = statement.executeQuery(sql);
 				while(resultSet.next()){
 		%>
 		<div class="card" id="block">
   			<div class="card-body">
-    			<h5 class="card-title"><a href="<%=resultSet.getString("url") %>"><%=resultSet.getString("title") %></a></h5>
+    			<h5 class="card-title"><%=resultSet.getString("title") %></h5>
     			<h6 class="card-subtitle mb-2 text-muted"><%=resultSet.getString("platform") %></h6>
     			<p><%=resultSet.getString("score") %></p>
-    			<p><%=resultSet.getString("editors_choice") %></p>
-    		}
-    			
   			</div>
 		</div>
 		<%
