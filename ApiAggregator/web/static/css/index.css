@@ -1,0 +1,10 @@
+html {
+    background-color: turquoise;
+    font: 40px Bold;
+}
+
+.lheader {
+    background-color: yellow;
+    font: 75px Bold;
+    font-family: 'Allerta Stencil', sans-serif;
+}
