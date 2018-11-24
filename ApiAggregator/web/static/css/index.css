@@ -8,3 +8,12 @@ html {
     font: 75px Bold;
     font-family: 'Allerta Stencil', sans-serif;
 }
+
+.redirect-main {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.redirect-main:hover {
+    background-color: turquoise;
+}
