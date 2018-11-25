@@ -25,7 +25,7 @@
 <head>
 	<title>Games Arena</title>
 
-	<link rel="stylesheet" type="text/css" href="retrieve.css">
+	<link rel="stylesheet" type="text/css" href="static/css/retrieve.css">
 
 	<!-- Pagination Effects -->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -55,10 +55,12 @@
 
 	<div class="navbar">
 		<a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
-	  	<a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+	  	<a href="search.jsp"><i class="fa fa-fw fa-search"></i> Search</a> 
 	  	<a href="contact.jsp"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-	  	<a href="login.jsp"><i class="fa fa-fw fa-user"></i> Login</a>
+                <a href="" class="logged-in" onclick="myFunction()"><i class="fa fa-fw fa-user"></i>You are Logged In!!</a>
 	</div>
+        
+        <div id="snackbar">Already IN Dude!!!</div>
 
 	<br><br>
 
@@ -74,7 +76,7 @@
 		%>
 		<div class="card" id="block">
   			<div class="card-body">
-    			<h5 class="card-title"><a href="<%=resultSet.getString("url") %>"><%=resultSet.getString("title") %></a></h5>
+    			<h5 class="card-title"><%=resultSet.getString("title") %></h5>
     			<h6 class="card-subtitle mb-2 text-muted"><%=resultSet.getString("platform") %></h6>
     			<hr>
     			<div class="double-block">
@@ -115,5 +117,18 @@
     		effect: 'slide'
 		});
 	</script>
+        
+        <script type="text/javascript">
+            function myFunction() {
+    // Get the snackbar DIV
+    var x = document.getElementById("snackbar");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 3 seconds, remove the show class from DIV
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
 </body>
 </html>

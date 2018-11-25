@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+}
+
+.element {
+    background-color: yellow;
+    position: relative;
+    float: left;
+    margin: 10px;
+    padding: 20px 10px;
+    font: 20px Bold;
+    text-align: center;
+    width: 150px;
+    height: 130px;
+}
+
+.mainblockSearch {
+    font: 40px Bold;
+    background-color: lightGrey;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Mate SC', serif;
+}
+
+.search-title {
+    background-color: lightGreen;
+    width: 50%;
+    text-align: center;
+    left: 0;
+    font: 35px Bold;
+    font-family: 'Jua', sans-serif;
+    border: 3px solid black;
+}
+
+.search-title1 {
+    background-color: lightGreen;
+    width: 30%;
+    text-align: center;
+    font: 20px Bold;
+    font-family: 'Jua', sans-serif;
+    border: 2px solid black;
+}

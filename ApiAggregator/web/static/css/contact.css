@@ -43,3 +43,59 @@ body, html {
 
         z-index: -100;
 }
+
+.left-tile {
+    position: relative;
+    float: left;
+    background: #5C258D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 30%;
+    height: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:10%;
+    text-align: center;
+    font: 20px Bold;
+}
+
+.right-tile {
+    position: relative;
+    float: left;
+    background: #DC2424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 30%;
+    height: 50%;
+    margin: 10%;
+    font: 20px Bold;
+    text-align: center;
+}
+
+.lt1 {
+    margin-top: 2%;
+}
+
+.rt1 {
+    margin-top: 2%;
+}
+
+input {
+    background-color: pink;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+legend {
+    background-color: yellow;
+    font: 30px Bold;
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: turquoise;
+    width: 100%;
+    font: 30px Bold;
+    margin-bottom: 0px;
+}

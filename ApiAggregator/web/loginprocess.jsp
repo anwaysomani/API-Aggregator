@@ -30,7 +30,7 @@
                     response.sendRedirect(redirectURL);
                 }
                 else {
-                    String redirectURL = "text.jsp";
+                    String redirectURL = "error.jsp";
                     response.sendRedirect(redirectURL);
                 }
             } catch(Exception e){
