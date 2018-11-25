@@ -24,7 +24,7 @@
 
 <head>
 	<title>Games Arena</title>
-	<link rel="stylesheet" type="text/css" href="../../retrieve.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/retrieve.css">
 
 	<!-- Pagination Effects -->
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
